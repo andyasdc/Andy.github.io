@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>地圖導覽｜東京迪士尼</title>
+  <link rel="icon" href="images/icon.png" type="image/png" />
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+  <style>
+    .map-container iframe {
+      width: 100%;
+      height: 500px;
+      border: 0;
+      border-radius: 8px;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="logo-wrapper">
+      <img src="images/icon.png" alt="網站圖標" class="logo-icon" />
+      <span class="logo">張凱富的網站</span> <!-- inline，不会撑高 header -->
+    </div>
+    <div class="menu-toggle">☰</div>
+    <nav>
+      <ul>
+        <li><a href="index.html">首頁</a></li>
+        <li>
+          <a href="attractions.html">樂園景點 ▼</a>
+          <ul>
+            <li><a href="rides.html">遊樂設施</a></li>
+            <li><a href="attractions.html">園區景點</a></li>
+          </ul>
+        </li>
+        <li><a href="bunny.html">兔崽子 (Bunny)</a></li>
+        <li><a href="ducky.html">鴨霸 (Ducky)</a></li>
+        <li><a href="gallery.html">照片集</a></li>
+        <li><a href="video.html">影片導覽</a></li>
+        <li><a href="map.html">地圖導覽</a></li>
+        <li><a href="about.html">關於本站</a></li>
+        <li><a href="contact.html">聯絡我們</a></li>
+        <li><a href="extras.html">更多資源</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <a href="index.html" id="homeBtn" class="btn-back">← 回到首頁</a>
+
+    <h2 class="section-title">東京迪士尼地圖</h2>
+
+    <div class="map-container">
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3244.9575233616467!2d139.88031131525647!3d35.63289638029057!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x60188c4c3ef42f1b%3A0xdfb1759dca7e2b30!2z6ZuE5q6lelvwyr1uIO6aO!5e0!3m2!1szh-TW!2sjp!4v1586876270752!5m2!1szh-TW!2sjp"
+        allowfullscreen
+        loading="lazy">
+      </iframe>
+    </div>
+  <div class="button-group">
+    <a href="https://maps.app.goo.gl/mU37qLkCk9gugFu47"
+       target="_blank"
+       rel="noopener"
+       class="btn btn-map-primary">
+      東京迪士尼樂園<br>Google 地圖
+    </a>
+    <a href="https://www.tokyodisneyresort.jp/tc/tdl/map.html"
+       target="_blank"
+       rel="noopener"
+       class="btn btn-map-secondary">
+      東京迪士尼樂園<br>官方介紹
+    </a>
+  </div>
+    <p>地圖含主要園區、餐廳、洗手間及 Toy Story 4 主題區位置標示。</p>
+  </main>
+  <footer class="footer footer-map">© 2025 張凱富的網站</footer>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js"></script>
+  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>

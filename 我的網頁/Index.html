@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>東京迪士尼樂園介紹</title>
+  <link rel="icon" href="images/icon.png" type="image/png" />
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+</head>
+<body>
+  <header>
+    <div class="logo-wrapper">
+      <img src="images/icon.png" alt="網站圖標" class="logo-icon" />
+      <span class="logo">張凱富的網站</span> <!-- inline，不会撑高 header -->
+    </div>
+    <div class="menu-toggle">☰</div>
+    <nav>
+      <ul>
+        <li><a href="index.html">首頁</a></li>
+        <li>
+           <a href="attractions.html">樂園景點 ▼</a>
+          <ul>
+            <li><a href="rides.html">遊樂設施</a></li>
+            <li><a href="attractions.html">園區景點</a></li>
+          </ul>
+        </li>
+        <li><a href="bunny.html">兔崽子 (Bunny)</a></li>
+        <li><a href="ducky.html">鴨霸 (Ducky)</a></li>
+        <li><a href="gallery.html">照片集</a></li>
+        <li><a href="video.html">影片導覽</a></li>
+        <li><a href="map.html">地圖導覽</a></li>
+        <li><a href="about.html">關於本站</a></li>
+        <li><a href="contact.html">聯絡我們</a></li>
+        <li><a href="extras.html">更多資源</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <section class="hero">
+      <h2 class="rainbow-title">歡迎來到東京迪士尼樂園</h2>
+      <p>東京迪士尼樂園結合《玩具總動員4》主題區，帶您體驗 Bunny & Ducky 的奇趣冒險。</p>
+    </section>
+    <section class="section-split">
+      <h3 class="section-title">快速導覽</h3>
+      <div class="link-grid">
+        <a href="attractions.html">園區景點</a>
+        <a href="rides.html">遊樂設施</a>
+        <a href="bunny.html">兔崽子專區</a>
+        <a href="ducky.html">鴨霸專區</a>
+        <a href="gallery.html">照片集</a>
+        <a href="video.html">影片導覽</a>
+        <a href="map.html">地圖導覽</a>
+        <a href="about.html">關於本站</a>
+        <a href="contact.html">聯絡我們</a>
+        <a href="extras.html">更多資源</a>
+      </div>
+    </section>
+
+    <!-- 主題區精華照片 (正方形卡片走馬燈) -->
+    <section class="section-split">
+      <h3 class="section-title">主題區精華照片</h3>
+      <div class="swiper-container photo-swiper">
+        <div class="swiper-wrapper">
+          <!-- 卡片格式：.card 裡 caption 在前 -->
+          <div class="swiper-slide">
+            <div class="card">
+              <p class="caption">兔崽子</p>
+              <div class="img-wrapper">
+              <img src="images/bunny1.jpg" alt="兔崽子" />
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="card">
+              <p class="caption">鴨霸</p>
+              <div class="img-wrapper">
+              <img src="images/ducky1.jpg" alt="鴨霸" />
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="card map-card">
+              <p class="caption">樂園全景</p>
+              <div class="img-wrapper">
+              <img src="images/park1.jpg" alt="樂園全景" />
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="card">
+              <p class="caption">城堡夜景</p>
+              <div class="img-wrapper">
+              <img src="images/park2.jpg" alt="城堡夜景" />
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-pagination"></div>
+      </div>
+    </section>
+  </main>
+  <footer class="footer footer-home">
+    © 2025 張凱富的網站
+  </footer>
+  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+  <script src="js/main.js"></script>
+  <div id="lightbox" class="lightbox">
+    <span class="lightbox-close">&times;</span>
+    <img class="lightbox-img" src="" alt="放大圖片">
+  </div>
+</body>
+</html>

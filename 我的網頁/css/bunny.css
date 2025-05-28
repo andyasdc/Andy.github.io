@@ -1,0 +1,64 @@
+.bunny-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 2rem;
+  background: linear-gradient(135deg, #e0f7fa 0%, #ffffff 100%);
+  padding: 2rem;
+  border-radius: 12px;
+  box-shadow: 0 8px 24px rgba(0,0,0,0.08);
+  max-width: 800px;
+  margin: 0 auto 2rem;
+}
+
+.bunny-img {
+  flex: 0 0 240px;
+  width: 100%;
+  border-radius: 12px;
+  box-shadow: 0 4px 16px rgba(0,0,0,0.1);
+  transition: transform 0.3s ease;
+}
+.bunny-img:hover {
+  transform: scale(1.03);
+}
+
+.bunny-text {
+  flex: 1;
+  min-width: 200px;
+}
+.bunny-text p {
+  font-size: 1.1rem;
+  line-height: 1.7;
+  margin-bottom: 1rem;
+}
+.bunny-text h3 {
+  margin-top: 1.5rem;
+  font-size: 1.25rem;
+  color: #007bbd; 
+}
+
+.bunny-text ul {
+  list-style: none;
+  padding: 0;
+  margin: 0.5rem 0 0;
+}
+.bunny-text ul li {
+  position: relative;
+  padding-left: 1.6em;
+  margin-bottom: 0.5rem;
+}
+.bunny-text ul li::before {
+  content: "🐰";
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
+@media (max-width: 600px) {
+  .bunny-wrapper {
+    flex-direction: column;
+    text-align: center;
+  }
+  .bunny-img { width: 180px; margin: 0 auto; }
+  .bunny-text { width: 100%; }
+}

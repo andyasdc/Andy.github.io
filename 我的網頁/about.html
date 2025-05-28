@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>關於本站｜東京迪士尼</title>
+  <link rel="icon" href="images/icon.png" type="image/png" />
+  <link rel="stylesheet" href="css/about.css" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <header>
+    <div class="logo-wrapper">
+      <img src="images/icon.png" alt="圖標" class="logo-icon">
+      <span class="logo">張凱富的網站</span> <!-- inline，不会撑高 header -->
+    </div>
+    <div class="menu-toggle">☰</div>
+    <nav>
+      <ul>
+        <li><a href="index.html">首頁</a></li>
+        <li>
+          <a href="attractions.html">樂園景點 ▼</a>
+          <ul>
+            <li><a href="rides.html">遊樂設施</a></li>
+            <li><a href="attractions.html">園區景點</a></li>
+          </ul>
+        </li>
+        <li><a href="bunny.html">兔崽子</a></li>
+        <li><a href="ducky.html">鴨霸</a></li>
+        <li><a href="gallery.html">照片集</a></li>
+        <li><a href="video.html">影片導覽</a></li>
+        <li><a href="map.html">地圖導覽</a></li>
+        <li><a href="about.html" class="active">關於本站</a></li>
+        <li><a href="contact.html">聯絡我們</a></li>
+        <li><a href="extras.html">更多資源</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <a href="index.html" class="btn-back" id="homeBtn">← 回到首頁</a>
+
+    <section class="author">
+      <img src="images/author.jpg" alt="張凱富">
+      <div>
+        <h3>我是 Andy Chang</h3>
+        <p>兔崽子(Bunny)＆鴨霸(Ducky)鐵粉。</p>
+        <p>聯絡作者：<a href="mailto:a29523253@gmail.com">Email</a></p>
+      </div>
+    </section>
+
+<section class="features">
+  <div class="feature-cards">
+    <a href="bunny.html" class="feature-card">
+      <div class="icon">🐰</div>
+      <h3>Bunny 專區</h3>
+      <p>介紹兔崽子(Bunny)</p>
+    </a>
+    <a href="ducky.html" class="feature-card">
+      <div class="icon">🐥</div>
+      <h3>Ducky 專區</h3>
+      <p>介紹鴨霸(Ducky)</p>
+    </a>
+    <a href="https://vivianjourney.tw/the-best-food-at-tokyo-disney-resort/" class="feature-card">
+      <div class="icon">🍔</div>
+      <h3>美食推薦</h3>
+      <p>必吃小食、主題餐廳懶人包</p>
+    </a>
+    <a href="map.html" class="feature-card">
+      <div class="icon">🗺️</div>
+      <h3>完整地圖</h3>
+      <p>整合 Google Map</p>
+    </a>
+  </div>
+</section>
+<section class="collection">
+  <h2>作者收藏</h2>
+  <div class="flipbook">
+    <div id="book" class="page">
+      <div class="page-inner">
+        <div class="page-side cover">
+          <img id="coverImage" src="images/collection.jpg" alt="相簿封面">
+        </div>
+        <div class="page-side front">
+          <img id="pageImage" src="" alt="收藏圖">
+        </div>
+        <div class="page-side back" id="pageBack">
+          <span class="watermark"></span>
+          <p class="back-text">更多收藏，敬請期待！</p>
+          <button id="backBtn" class="flip-btn">回到封面</button>
+        </div>
+      </div>
+    </div>
+    <div class="controls">
+      <button id="prevBtn" class="flip-btn">上一頁</button>
+      <button id="nextBtn" class="flip-btn">下一頁</button>
+    </div>
+  </div>
+</section>
+    <div id="lightbox" class="lightbox">
+      <span class="lightbox-close">&times;</span>
+      <img class="lightbox-img" src="" alt="放大觀看">
+    </div>
+  </main>
+
+<footer class="footer footer-about">© 2025 張凱富的網站</footer>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js"></script>
+  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>

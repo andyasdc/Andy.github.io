@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>更多資源｜東京迪士尼</title>
+  <link rel="icon" href="images/icon.png" type="image/png" />
+  <link rel="stylesheet" href="css/extras.css" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <header>
+    <div class="logo-wrapper">
+      <img src="images/icon.png" alt="圖標" class="logo-icon">
+      <span class="logo">張凱富的網站</span> <!-- inline，不会撑高 header -->
+    </div>
+    <div class="menu-toggle">☰</div>
+    <nav>
+      <ul>
+        <li><a href="index.html">首頁</a></li>
+        <li>
+          <a href="attractions.html">樂園景點 ▼</a>
+          <ul>
+            <li><a href="rides.html">遊樂設施</a></li>
+            <li><a href="attractions.html">園區景點</a></li>
+          </ul>
+        </li>
+        <li><a href="bunny.html">兔崽子 (Bunny)</a></li>
+        <li><a href="ducky.html">鴨霸 (Ducky)</a></li>
+        <li><a href="gallery.html">照片集</a></li>
+        <li><a href="video.html">影片導覽</a></li>
+        <li><a href="map.html">地圖導覽</a></li>
+        <li><a href="about.html">關於本站</a></li>
+        <li><a href="contact.html">聯絡我們</a></li>
+        <li><a href="extras.html">更多資源</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="resource-page">
+    <a href="index.html" class="btn-back" id="homeBtn">← 回到首頁</a>
+    <h2 class="section-title">更多資源</h2>
+
+    <ul class="resource-list">
+      <li>
+        <a href="download/官方地圖.pdf" download 
+           class="resource-card" 
+           data-preview="download/官方地圖.pdf"
+           data-id="map" 
+           data-updated="2025-05-20">
+          <div class="card-header">
+            <h3>官方地圖 (PDF)</h3>
+            <span class="tag">New</span>
+          </div>
+          <p class="card-desc">最新版本，含景點詳圖與遊玩路線</p>
+          <div class="card-actions">
+            <button type="button" class="btn-preview">預覽</button>
+            <button type="button" class="btn-fav">❤</button>
+            <button type="button" class="btn-share">🔗</button>
+          </div>
+        </a>
+      </li>
+      <li>
+        <a href="download/桌布.jpg" download 
+           class="resource-card" 
+           data-preview="download/桌布.jpg" 
+           data-id="bunny" 
+           data-updated="2025-04-15">
+          <div class="card-header">
+            <h3>Bunny ＆ Ducky 桌布</h3>
+            <span class="tag">New</span>
+          </div>
+          <p class="card-desc">高畫質桌布，適用 4K 顯示器</p>
+          <div class="card-actions">
+            <button type="button" class="btn-preview">預覽</button>
+            <button type="button" class="btn-fav">❤</button>
+            <button type="button" class="btn-share">🔗</button>
+          </div>
+        </a>
+      </li>
+      <li>
+        <a href="download/電影桌布.jpg" download 
+           class="resource-card" 
+           data-preview="download/電影桌布.jpg" 
+           data-id="ducky" 
+           data-updated="2025-03-10">
+          <div class="card-header">
+            <h3>玩具總動員4 壁紙</h3>
+            <span class="tag">Updated</span>
+          </div>
+          <p class="card-desc">高畫質桌布，適用 4K 顯示器</p>
+          <div class="card-actions">
+            <button type="button" class="btn-preview">預覽</button>
+            <button type="button" class="btn-fav">❤</button>
+            <button type="button" class="btn-share">🔗</button>
+          </div>
+        </a>
+      </li>
+    </ul>
+  </main>
+
+  <!-- 預覽 Modal -->
+  <div id="previewModal" class="modal">
+    <div class="modal-content">
+      <span class="modal-close">&times;</span>
+      <img id="modalImage" src="" alt="預覽圖">
+    </div>
+  </div>
+  <footer class="footer footer-extras">
+    © 2025 張凱富的網站
+  </footer>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js"></script>
+  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+  <script src="js/main.js"></script>
+  <script src="js/extras.js"></script>
+</body>
+</html>

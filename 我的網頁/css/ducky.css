@@ -1,0 +1,69 @@
+.ducky-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 2rem;
+  background: linear-gradient(135deg, #fff9e6 0%, #fcf4d9 100%);
+  padding: 2rem;
+  border-radius: 12px;
+  box-shadow: 0 8px 24px rgba(0,0,0,0.06);
+  max-width: 800px;
+  margin: 0 auto 2rem;
+}
+
+.ducky-img {
+  flex: 0 0 240px;
+  width: 100%;
+  border-radius: 12px;
+  box-shadow: 0 4px 16px rgba(0,0,0,0.08);
+  transition: transform 0.3s ease;
+}
+.ducky-img:hover {
+  transform: scale(1.03);
+}
+
+.ducky-text {
+  flex: 1;
+  min-width: 200px;
+}
+.ducky-text p {
+  font-size: 1.1rem;
+  line-height: 1.7;
+  margin-bottom: 1rem;
+}
+.ducky-text h3 {
+  margin-top: 1.5rem;
+  font-size: 1.25rem;
+  color: #b38f00;
+}
+
+.ducky-text ul {
+  list-style: none;
+  padding: 0;
+  margin: 0.5rem 0 0;
+}
+.ducky-text ul li {
+  position: relative;
+  padding-left: 1.8em;
+  margin-bottom: 0.5rem;
+}
+.ducky-text ul li::before {
+  content: "🐥";
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
+@media (max-width: 600px) {
+  .ducky-wrapper {
+    flex-direction: column;
+    text-align: center;
+  }
+  .ducky-img {
+    width: 180px;
+    margin: 0 auto;
+  }
+  .ducky-text {
+    width: 100%;
+  }
+}

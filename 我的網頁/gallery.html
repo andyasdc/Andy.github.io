@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width,initial-scale=1.0"/>
+  <title>照片集｜東京迪士尼</title>
+  <link rel="icon" href="images/icon.png"/>
+  <link rel="stylesheet" href="css/style.css"/>
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css"/>
+  <link rel="stylesheet" href="css/gallery.css"/>
+</head>
+<body>
+  <div id="app">
+  <header>
+    <div class="logo-wrapper">
+      <img src="images/icon.png" alt="圖標" class="logo-icon">
+      <span class="logo">張凱富的網站</span> <!-- inline，不会撑高 header -->
+    </div>
+    <div class="menu-toggle">☰</div>
+    <nav>
+      <ul>
+        <li><a href="index.html">首頁</a></li>
+        <li>
+          <a href="attractions.html">樂園景點 ▼</a>
+          <ul>
+            <li><a href="rides.html">遊樂設施</a></li>
+            <li><a href="attractions.html">園區景點</a></li>
+          </ul>
+        </li>
+        <li><a href="bunny.html">兔崽子 (Bunny)</a></li>
+        <li><a href="ducky.html">鴨霸 (Ducky)</a></li>
+        <li><a href="gallery.html">照片集</a></li>
+        <li><a href="video.html">影片導覽</a></li>
+        <li><a href="map.html">地圖導覽</a></li>
+        <li><a href="about.html">關於本站</a></li>
+        <li><a href="contact.html">聯絡我們</a></li>
+        <li><a href="extras.html">更多資源</a></li>
+      </ul>
+    </nav>
+  </header>
+
+    <main>
+      <a href="index.html" id="homeBtn" class="btn-back">← 回到首頁</a>
+      <h2 class="section-title">照片集</h2>
+      <section class="gallery-swiper swiper-container">
+        <div class="gallery-nav">
+          <button class="swiper-prev btn-text">上一頁</button>
+          <button class="swiper-next btn-text">下一頁</button>
+        </div>
+
+        <div class="swiper-wrapper">
+          <!-- Slide 1 -->
+          <div class="swiper-slide">
+            <div class="gallery-slide-grid">
+              <figure class="gallery-item"><img src="images/people1.jpg" alt="人物合照"></figure>
+              <figure class="gallery-item"><img src="images/food1.jpg"   alt="米奇冰棒"></figure>
+              <figure class="gallery-item"><img src="images/park3.jpg"   alt="旋轉木馬"></figure>
+              <figure class="gallery-item"><img src="images/room1.jpg"   alt="主題房間"></figure>
+            </div>
+          </div>
+          <!-- Slide 2 -->
+          <div class="swiper-slide">
+            <div class="gallery-slide-grid">
+              <figure class="gallery-item"><img src="images/people2.jpg" alt="兔崽子鴨霸"></figure>
+              <figure class="gallery-item"><img src="images/food2.jpg"   alt="唐老鴨掌刈包"></figure>
+              <figure class="gallery-item"><img src="images/park4.jpg"   alt="樂園夜景"></figure>
+              <figure class="gallery-item"><img src="images/room2.jpg"   alt="迪士尼海洋飯店"></figure>
+            </div>
+          </div>
+        </div>
+
+        <div class="swiper-pagination"></div>
+      </section>
+    </main>
+
+    <footer class="footer footer-gallery">© 2025 張凱富的網站</footer>
+  </div>
+  <div class="lightbox" id="lightbox">
+    <span class="lightbox-close" id="lbClose">&times;</span>
+    <img class="lightbox-img" id="lbImg" src="" alt="放大檢視">
+  </div>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js"></script>
+  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+  <script src="js/main.js"></script>    
+</body>
+</html>
